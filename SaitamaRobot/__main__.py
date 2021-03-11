@@ -59,37 +59,37 @@ from SaitamaRobot.modules.helper_funcs.readable_time import get_readable_time
 
 
 PM_START_TEXT = """
-Hello there,The name's [𝙎𝙪𝙯𝙪𝙮𝙖](https://telegra.ph/file/5bcbee541234987308553.jpg)
-I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group
+Hello there, Myself [𝑵𝒆𝒔𝒕𝒍𝒆](https://telegra.ph/file/e9c76b32a7415b9498e1f.jpg)
+
+I am an Group Managing Bot and I will help in managing your group with ease.
+
 ✪ Make sure you read *INFO* Section Below.✪ 
 """
 
 buttons = [
     [        
         InlineKeyboardButton(
-        text="INFO", callback_data="aboutmanu_"
+        text="✨ INFO ✨", callback_data="aboutmanu_"
         ),
     ],
     [        
         InlineKeyboardButton(
-        text="❔Help & Commands", callback_data="help_back"
+        text=" ⚜ My Commands ⚜ ", callback_data="help_back"
         ),
     ],
     [
         InlineKeyboardButton(
-        text="💫 Add Suzuya to your group 💫", url="t.me/suzuya_probot?startgroup=true"
+        text=" 🍫 Invite Me Now !!! 🍫 ", url="t.me/MissNestle_bot?startgroup=true"
         ),
     ]
 ]
 
 
 HELP_STRINGS = """
-*Main Commands :* [ʕ·ᴥ·ʔ](https://telegra.ph/file/5534384d2f2b2d8e6fdbb.jpg)
+*Main Commands :* [:)](https://telegra.ph/file/e9c76b32a7415b9498e1f.jpg)
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
-✪ /settings: 
-   ◔ in PM: will send you your settings for all supported modules.
-   ◔ in a Group: will redirect you to pm, with all that chat's settings.
+✪ / , !: Triggers
 """
 
 
@@ -249,10 +249,9 @@ def SaitamaRobot_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*Hi again! The name's {dispatcher.bot.first_name}. \n\nAs  You I'm An Anime Themed Group Management Bot.* "
-                 f"\n\n Join [Updates Channel](https://t.me/SuzuyaUpdates) To Keep Yourself Updated About {dispatcher.bot.first_name}."
-                 f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
-                 f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features. [◖⚆ᴥ⚆◗](https://telegra.ph/file/7f6a4d656e89553340af9.jpg)."
+            text=f"*Hi again! The name's {dispatcher.bot.first_name}. \n\nAs  You I'm An Group Management Bot.* "
+                 f"\n\n I have many features like Antispam system , music and the SIBYL banning system which safegaurds and helps your group from spammers."
+                 f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features. [:)](https://telegra.ph/file/7f6a4d656e89553340af9.jpg)."
                  f"\n\nYou Can Know More About Me By Clicking The Below Buttons.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -263,7 +262,7 @@ def SaitamaRobot_about_callback(update, context):
                     InlineKeyboardButton(text="T & C", callback_data="aboutmanu_tac")
                   ],
                  [
-                    InlineKeyboardButton(text="❔Help & Commands", callback_data="help_back")
+                    InlineKeyboardButton(text="✨ Commands ✨", callback_data="help_back")
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")
